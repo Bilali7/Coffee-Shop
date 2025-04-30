@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    /* background-image: url(img/bg.png); */
+    background: #000;
+    font-family: "Roboto", sans-serif;
+}
+
+/* .navs {
+    border: 2px solid purple;
+} */
+
+.container {
+    /* border: 2px solid rgb(188, 188, 188); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10001;
+    padding-top: 2em;
+    /* margin-top: 2em; */
+    display: flex;
+    justify-content: space-around;
+    transition: all .50s ease;
+}
+
+.imgs {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    /* border: 2px solid blue; */
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.list a {
+    display: inline-block;
+    margin: 1.6em;
+    color: white;
+    transition: all .6s ease;
+}
+
+.list li:hover {
+    color: darkgrey;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.btns {
+    display: inline-block;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    border: 1px solid white;
+    border-radius: 0.4em;
+    background: #000;
+    color: white;
+    width: 108px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .6 ease;
+}
+
+.btns:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: grey;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 2.4em;
+    margin-left: 0.4em;
+    cursor: pointer;
+}
+
+section {
+    padding: 0 12%;  
+}
+
+.hero {
+    position: relative;
+    background-image: url(img/bg.png);
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-text {
+    color: white;
+    /* border: 2px solid purple; */
+}
+
+.hero-text h5 {
+    font-size: 500;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.hero-text h1 {
+    font-weight: 900;
+    font-size: 4em;
+    margin: 15px 0;
+}
+
+.edit {
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 30px;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+}
+
+.main-hero {
+    display: flex;
+    align-items: center;
+}
+
+.btn-order {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #925021d6;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: all .6s ease;
+    margin-right: 22px;
+}
+
+.btn-order:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    /* padding-left: 1em;    */
+}
+
+.price .reg {
+    font-size: 0.5em;
+    font-weight: 400;
+    padding-left: 0.4em;
+}
+
+.main-hero a {
+    /* border: 2px solid yellow; */
+    text-decoration: none;
+    color: white;
+}
+
+.hero-img {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    padding: 0 5%;
+    /* border: 2px solid black; */
+    /* display: flex;
+    flex-direction: column; */
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 38px 0;
+    font-size: 1.8em;
+    color: white;
+    transition: all .6s;
+}
+
+.icons i:hover {
+    transform: translateY(-5px);
+    color: gray;
+    cursor: pointer;
+}
+
+.scroll {
+    /* border: 2px solid rebeccapurple; */
+    /* background: white; */
+    position: absolute;
+    top: 95%;
+    right: 9%;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+}
+
+.scroll a {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.scroll i {
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
+
+@media (max-width: 1800px) {
+    header {
+        padding-right: 4em;
+        padding-left: 4em;
+    }
+
+    .icons {
+        padding: 0 4%;
+    }
+
+    .scroll {
+        right: 4%;
+    }
+
+    .im {
+        width: 130%;
+    }
+}
+
+@media (max-width: 1710px) {
+    .icons {
+        display: none;
+    }
+
+    section {
+        padding: 0 7%;
+    }
+
+    .im {
+        width: 110%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .hero-text h1 {
+        font-size: 3.6em;
+    }
+    .edit {
+        font-size: 1em;
+    }
+    .btn-order {
+        padding: 10px 24px;
+    }
+    .price {
+        font-size: 1.6em;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    #menu-icon {
+        display: block;
+        z-index: 1;
+        /* width: 0px; */
+        /* margin-left: 0.5em; */
+    }
+    .list {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 100px 50px;
+        top: 0;
+        right: 0;
+        left: 100%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(32px);
+        transition: all .6s ease-in-out;
+        /* z-index: 1; */
+    }
+    .list a {
+        display: block;
+        /* padding: 0; */
+        margin: 0px 0px 25px 0px;
+        padding-bottom: 1.2em;
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+    .list.open {
+        left: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .scroll {
+        display: none   ;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    .hero-text {
+        padding-top: 170px;
+    }
+    .hero-img {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .hero-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 100vh;
+    }
+    .hero-img {
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h5 {
+        font-size: 15px;
+    }
+    .hero-text h1 {
+        font-size: 2.8em;
+    }
+    .edit {
+        font-size: 0.9em;
+    }
+    .price {
+        font-size: 1.4em;
+    }
+    .hero-img {
+        height: 370px;
+        width: 370px;
+        margin: 0 auto;
+    }
+}
